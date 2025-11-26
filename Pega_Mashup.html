@@ -13,12 +13,16 @@
 <body>
   <label for="txt">Enter text</label>
   <input id="txt" type="text" placeholder="Type here">
-  <button id="btn">Create</button>
+  <button id="btn" onclick="getID()">Create</button>
 
   <script>
-    document.getElementById('btn').addEventListener('click', function(){
+    /*document.getElementById('btn').addEventListener('click', function(){
       alert('New webpage created');
-    });
+    });*/
+	function getID(){
+	var s = document.getElementById("theEmbed").getEmbedData(".PatientName");
+	document.getElementById("txt").value=s;
+	}
   </script>
   <script src='https://bmznkisq.pegace.net/prweb/PRRestService/c11nsvc/v1/pega-embed.js' ></script>
 <pega-embed 
@@ -39,17 +43,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
