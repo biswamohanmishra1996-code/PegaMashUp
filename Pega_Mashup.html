@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minimal Page</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;padding:1rem}
+    input[type="text"]{padding:.4rem;border:1px solid #ccc;border-radius:4px}
+    button{padding:.45rem .75rem;margin-left:.5rem;border-radius:4px;border:0;background:#0066cc;color:#fff;cursor:pointer}
+  </style>
+</head>
+<body>
+  <label for="txt">Enter text</label>
+  <input id="txt" type="text" placeholder="Type here">
+  <button id="btn">Create</button>
+
+  <script>
+    document.getElementById('btn').addEventListener('click', function(){
+      alert('New webpage created');
+    });
+  </script>
+  <script src='https://bmznkisq.pegace.net/prweb/PRRestService/c11nsvc/v1/pega-embed.js' ></script>
+<pega-embed id='theEmbed' action='createCase' caseTypeID='MyOrg-Appointm-Work-AppointmentScheduling' themeID='pzCosmosDefault' casePage='full' appAlias='appointment-scheduling' pegaServerUrl='https://bmznkisq.pegace.net/prweb/' autoReauth='true' authService='pega' clientId='81558779138965394339' style='width:100%'>
+</pega-embed>
+
+
+</body>
+</html>
